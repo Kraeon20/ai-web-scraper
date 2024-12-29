@@ -1,18 +1,10 @@
 from selenium import webdriver
 from bs4 import BeautifulSoup
-from selenium.webdriver.chrome.options import Options
 
 def scrape_website(website):
     print("Launching chrome browser...")
 
-
-    chrome_options = Options()
-    chrome_options.add_argument("--headless")
-    chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--window-size=1920x1080")
-    chrome_options.add_argument("--no-sandbox")
-
-    driver = webdriver.Chrome(options=chrome_options)
+    driver = webdriver.Chrome()
     try:
         driver.get(website)
         print("opening page...")

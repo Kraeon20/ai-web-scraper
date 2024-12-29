@@ -3,7 +3,7 @@ from scrape import scrape_website, get_body_content, clean_body_content, split_d
 from parse import parse_with_gemini
 
 def display_navbar():
-    stl.sidebar.title("Navigation")
+    stl.sidebar.title("Williams Asante")
     stl.sidebar.image("me.jpg", width=150)
     stl.sidebar.markdown("## Contact Me")
 
